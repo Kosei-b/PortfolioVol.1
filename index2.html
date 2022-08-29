@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	 <!-- Home  Main Page -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/2d711d5ee5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style2.css.map">
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+
+	<title>KOSEI BAN/Home</title>
+</head>
+<body>
+	<header>
+		<ul>
+			<a href="index2.html"><li>HOME</li></a>
+			<a href="index.html"><li>PORTFOLIO</li></a>
+			<a href="#jump-about"><li>ABOUT</li></a>
+			<a href="#jump-contact"><li>CONTACT</li></a>
+            <a href="index3.html"><li></li></a>
+		</ul>
+	</header>
+	<div class="home-top">
+		<h1>KOSEI BAN</h1>
+		<p>Hello！<i class="fas fa-hand-paper faa-shake animated hand"></i> </p>
+		<p>I'm a Mobile & Web Developer!</p>	
+		<p>Thank you for visiting my portfolio!</p>
+	</div>
+
+	<section id="slideshow">
+		<div class="entire-content">
+		  <div class="content-carrousel">
+			<figure class="shadow"><img src="images/project!.jpeg"/></figure>
+			<figure class="shadow"><img src="images/project2.png"/></figure>
+			<figure class="shadow"><img src="images/project3.png"/></figure>
+			<figure class="shadow"><img src="images/pro4.png"/></figure>
+			<figure class="shadow"><img src="images/pro5.png"/></figure>
+			<figure class="shadow"><img src="https://picsum.photos/205/300"/></figure>
+			<figure class="shadow"><img src="https://picsum.photos/206/300"/></figure>
+			<figure class="shadow"><img src="https://picsum.photos/207/300"/></figure>
+			<figure class="shadow"><img src="https://picsum.photos/208/300"/></figure>
+		  </div>
+		</div>
+	</section>
+	  
+	<div class="View-btn">
+		<a href="index.html">View All My Works<i class="fas fa-arrow-right faa-horizontal animated"></i></a>	
+	</div>
+
+	<div class="scroll-icon"><i class="fas fa-angle-down fa-4x faa-vertical animated"></i></div>
+
+
+	<div class="about">
+		
+			<h1 id="jump-about">ABOUT</h1>
+
+		<div class="profile">
+			<div class="profile-img">
+				
+					<p class="fadein"><img src="images/KOSE.jpeg" alt=""></p>
+
+					<script>
+
+						$(function(){
+							$(window).scroll(function (){
+								$('.fadein').each(function(){
+									var elemPos = $(this).offset().top;
+									var scroll = $(window).scrollTop();
+									var windowHeight = $(window).height();
+									if (scroll > elemPos - windowHeight + 200){
+										$(this).addClass('scrollin');
+									}
+								});
+							});
+						});
+
+					</script>
+
+					<h3>KOSEI BAN</h3>
+
+					<table>
+						<tr>
+							<td><a href="http://www.linkedin.com/in/kosei-ban-921081233" class="linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></td>
+							<td><a href="https://github.com/Kosei-b" class="github"><i class="fa-brands fa-github fa-2x"></i></a></td>
+							<td><a href="https://drive.google.com/file/d/1hmScwH9wJzgxZLh2v_jzbAt_NiYBCU4e/view?usp=sharing" class="resume">Resume</a></td>
+						</tr>
+					</table>
+		
+			    </div>
+			</div>
+
+			
+
+			<div class="bio">
+				<div class=" box box1">
+
+					<div class="boxborder">
+						<h4>
+							I'm an iOS Developer in BC, Canada with 2 years self develop experience. <br>
+
+							【Strong Field】<br>
+							・swift <br>
+							・iOS Development <br>
+							・iOS SDK <br>
+							・Fire Base <br>
+							・Adobe <br>
+							
+							Also I'm interested in UI Design and Android development(Kotlin, Flutter)
+							
+					   </h4>
+				   </div>
+
+				</div>
+				
+			</div>
+		  
+		
+	</div>	
+
+	<div class="contact">
+		<h1 id="jump-contact">CONTACT</h1>
+		<p>Have a question or want to work together ?</p>
+		<input type="text" placeholder="name">
+		<input type="email" placeholder="e-mail">
+		<textarea name="massage" id="" cols="30" rows="10" placeholder="your massage"></textarea>
+		<div class="View-btn submit">
+			<a href="#">submit<i class="fas fa-arrow-right faa-horizontal animated"></i></a>	
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-top"></div>
+		<small class="copy-right">&copy;KOSEI BAN</small>
+	</footer>
+</body>
+</html>
